@@ -15,12 +15,12 @@ import Middle from './components/middle.component';
 import Footer from './components/footer.component';
 import Slider from './components/slider.component';
 import oneAttraction from './components/oneAttraction.component';
+import ShowcaseAttractions from './components/showcaseattractions.js';
 
 function App() {
   return (
     <Router>
       <Navbar/>
-      {/* change route names */}
       <Switch>
         <Route path="/" exact>
           <Showcase/>
@@ -32,7 +32,10 @@ function App() {
           <Slider />
           <br />
         </Route>
-        <Route exact path="/attractions" component={Attractions} />
+        <Route exact path="/attractions">
+          <ShowcaseAttractions/>
+          <Attractions/>
+        </Route>
         <Route path="/addattractions" component={addAttractions} />
         <Route path="/booking" component={Booking} />
         <Route path="/about" component={About} />

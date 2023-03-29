@@ -73,11 +73,7 @@ export default class Attractions extends Component {
           <Helmet>
           <title>{ TITLE }</title>
           </Helmet>
-          <div>
-            <div className='showcaseattraction'>
-            <div className='showcase-overlayattraction'>
-            </div>
-            </div>
+          <div id='attraction-list'>
             <div className='backattractions'>
               <h2 id="header">Posted Attractions</h2>
               <div className='filter-buttons'>
